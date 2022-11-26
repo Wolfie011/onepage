@@ -7808,7 +7808,6 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-image: url("/assets/img/background.jpg");
 }
 .bg-greyish {
   --bs-bg-opacity: 1;
