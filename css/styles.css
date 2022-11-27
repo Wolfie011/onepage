@@ -11449,10 +11449,16 @@ html {
 .masthead .masthead-subheading {
   font-size: 1.5rem;
 }
-.masthead .masthead-avatar {
-  width: 15rem;
+@media (max-width:992px) {
+  .masthead .masthead-avatar {
+    width: 20rem;
+  } 
 }
-
+@media (min-width:992px) {
+  .masthead .masthead-avatar {
+    width: 35rem;
+  } 
+}
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
