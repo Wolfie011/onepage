@@ -170,37 +170,30 @@
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="col-lg-6 col-xl-6">
+                        <form id="contactForm" target="_blank" action="https://formsubmit.co/64b0c7f19500bc097e716fc59627a927" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Imię i nazwisko</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Imie jest wymagane.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Adres email</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Adres email jest wymagany.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Nie poprawny adres email.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" type="tel" name="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Numer telefonu</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Numer telefonu jest wymagany.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" type="text" name="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Wiadomość</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Wiadomość jest wymagana.</div>
                             </div>
@@ -210,30 +203,19 @@
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    <div class="fw-bolder">Wysłano pomyślnie!</div>
                                 </div>
                             </div>
                             <!-- Submit error message-->
                             <!---->
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Błąd podczas wysyłania wiadomość!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Wyślij</button>
                         </form>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-0 mb-0 mb-lg-0">
+                    <div class="col-lg-6 col-xl-5 text-center">
                         <h4 class="text-uppercase mb-4">Lokalizacja</h4>
                         <p class="lead">
                             ul. Żeromskiego 29
@@ -244,13 +226,14 @@
                             <br />
                             <a href="http://www.empian.pl">www.empian.pl</a>
                             <br />
-                            
                             <a href="tel:+48 792 246 793">tel:+48 792 246 793</a>
+                            <div class="divider-custom"></div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746.2602789833953!2d20.85765169219152!3d52.17704647681291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471935aa83c85a5d%3A0xc43abc8f09db46d4!2sStefana%20%C5%BBeromskiego%2029%2C%2005-820%20Piast%C3%B3w!5e1!3m2!1spl!2spl!4v1669654155522!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </p>
-                    </div>         
+                    </div>
                 </div>
             </div>
-        </footer>
+        </section>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; EMPIAN 2022</small></div>
